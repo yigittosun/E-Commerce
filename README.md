@@ -1,6 +1,6 @@
 # E-commerce Template
  
- Products used through fakestoreapi.com
+ Products used through [Fakestore API](https://www.fakestoreapi.com)
  
  # Screen Shots:
  ![image](https://user-images.githubusercontent.com/24936165/100128397-448a9300-2e91-11eb-8b31-11f05d5c79cc.png)
