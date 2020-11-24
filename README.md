@@ -1,4 +1,4 @@
-# E-commerce Template
+# E-Commerce
  
  Products used through [Fakestore API](https://www.fakestoreapi.com)
  
