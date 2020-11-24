@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="author" content="Yiğit Tosun">
+	<title>Yigitto E-Commerce</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+
+	<!--JQuery-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="flickity.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<h2><span class="brand-logo">Yiğitto</span> <label for="menu-toggle"><span class="ti-menu"></span></label></h2>
+		
+
+		<input type="checkbox" id="menu-toggle" />
+		<div class="main-menu">
+			<div class="menu-responsive">
+				<label for="menu-toggle">Close</label>
+				<form action="" class="search">
+					<input type="search" placeholder="Search What Do You Want !" />
+					
+					<button><span class="span ti-search"></span></button>
+				</form>
+			</div>
+			<a href="products.html">Products</a>
+		<a href="Basket.html">Basket</a>
+		</div>
+	</header>
+
+	<div class="carousel" data-flickity='{ "wrapAround": true }'>
+		<div class="carousel-item">
+			<div class="carousel-info">
+				<h1>%50 OFF
+					CODE:BLCK20</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+				<a href="products.html">Shop now</a>
+			</div>
+			<div class="carousel-image">
+				<img src="img/banner1.jpg" alt="" />
+			</div>
+		</div>
+		<div class="carousel-item">
+			<div class="carousel-info">
+				<h1>HP Desktop PC</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+				<a href="products.html">Shop now</a>
+			</div>
+			<div class="carousel-image">
+				<img src="img/banner0.png" alt="" />
+			</div>
+		</div>
+		<div class="carousel-item">
+			<div class="carousel-info">
+				<h1>Logitech Mouse</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+				<a href="products.html">Shop now</a>
+			</div>
+			<div class="carousel-image">
+				<img src="img/banner3.png" alt="" />
+			</div>
+		</div>
+	</div>
+
+	<div class="popular">
+		<h2>Popular Products</h2>
+		<div class="popular-carousel" data-flickity='{ "autoPlay": true, "prevNextButtons": false, "wrapAround": true }'>
+			<div class="single-item">
+				<div class="img" style="background-image: url('img/1.jpg');"></div>
+				<div class="info">
+					<h3>PC</h3>
+					<p>Electronic</p>
+
+					<div class="item-flex">
+						<div class="rating">
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+						</div>
+
+						<div class="price">
+							<h4>$650.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<div class="img" style="background-image: url('img/prod1.jpeg');"></div>
+				<div class="info">
+					<h3>Wood Chair</h3>
+					<p>Home</p>
+
+					<div class="item-flex">
+						<div class="rating">
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+						</div>
+
+						<div class="price">
+							<h4>$650.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<div class="img" style="background-image: url('img/4.jpg');"></div>
+				<div class="info">
+					<h3>Hp PC</h3>
+					<p>Electronic</p>
+
+					<div class="item-flex">
+						<div class="rating">
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+						</div>
+
+						<div class="price">
+							<h4>$650.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<div class="img" style="background-image: url('img/5.jpg');"></div>
+				<div class="info">
+					<h3>Watch</h3>
+					<p>Accessories</p>
+
+					<div class="item-flex">
+						<div class="rating">
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+						</div>
+
+						<div class="price">
+							<h4>$650.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<div class="img" style="background-image: url('img/prod2.jpg');"></div>
+				<div class="info">
+					<h3>Tablet PC</h3>
+					<p>Electronic</p>
+
+					<div class="item-flex">
+						<div class="rating">
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+						</div>
+
+						<div class="price">
+							<h4>$650.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popular">
+		<h2>Featured Products</h2>
+		<div class="popular-carousel" data-flickity='{ "autoPlay": true, "prevNextButtons": false, "wrapAround": true }'>
+			<div class="single-item">
+				<div class="img" style="background-image: url('img/prod5.jpg');"></div>
+				<div class="info">
+					<h3>Chair</h3>
+					<p>Home</p>
+
+					<div class="item-flex">
+						<div class="rating">
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+						</div>
+
+						<div class="price">
+							<h4>$650.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<div class="img" style="background-image: url('img/prod4.jpg');"></div>
+				<div class="info">
+					<h3>Chair</h3>
+					<p>Home</p>
+
+					<div class="item-flex">
+						<div class="rating">
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+						</div>
+
+						<div class="price">
+							<h4>$650.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<div class="img" style="background-image: url('img/4.jpg');"></div>
+				<div class="info">
+					<h3>PC</h3>
+					<p>Electronic</p>
+
+					<div class="item-flex">
+						<div class="rating">
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+						</div>
+
+						<div class="price">
+							<h4>$550.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<div class="img" style="background-image: url('img/5.jpg');"></div>
+				<div class="info">
+					<h3>Watch</h3>
+					<p>Accessories</p>
+
+					<div class="item-flex">
+						<div class="rating">
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+						</div>
+
+						<div class="price">
+							<h4>$1000.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<div class="img" style="background-image: url('img/prod2.jpg');"></div>
+				<div class="info">
+					<h3>Tablet PC</h3>
+					<p>Electronic</p>
+
+					<div class="item-flex">
+						<div class="rating">
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+							<span class="ti-star"></span>
+						</div>
+
+						<div class="price">
+							<h4>$840.00</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="deals">
+		<div class="deals-inner">
+			<div class="timer">
+				<h1>Deals Of The Day</h1>
+				<h3 class="values">0.00</h3>
+			</div>
+			<div class="deals-carousel" data-flickity='{ "autoPlay": true,"wrapAround": true, "pageDots": false }'>
+				<div class="single-item">
+					<div class="img" style="background-image: url('img/prod2.jpg');"></div>
+					<div class="info">
+						<h3>Tablet PC</h3>
+						<p>Electronic</p>
+
+						<div class="item-flex">
+							<div class="rating">
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+							</div>
+
+							<div class="price">
+								<h4>$330.00</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="single-item">
+					<div class="img" style="background-image: url('img/prod2.jpg');"></div>
+					<div class="info">
+						<h3>Tablet PC</h3>
+						<p>Electronic</p>
+
+						<div class="item-flex">
+							<div class="rating">
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+							</div>
+
+							<div class="price">
+								<h4>$650.00</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="single-item">
+					<div class="img" style="background-image: url('img/prod2.jpg');"></div>
+					<div class="info">
+						<h3>Tablet PC</h3>
+						<p>Electronic</p>
+
+						<div class="item-flex">
+							<div class="rating">
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+							</div>
+
+							<div class="price">
+								<h4>$150.00</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="single-item">
+					<div class="img" style="background-image: url('img/prod2.jpg');"></div>
+					<div class="info">
+						<h3>Tablet PC</h3>
+						<p>Electronic</p>
+
+						<div class="item-flex">
+							<div class="rating">
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+							</div>
+
+							<div class="price">
+								<h4>$350.00</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="card-brand">
+		<div class="single-card" style="background-image: url('img/7.jpg');"></div>
+		<div class="single-card" style="background-image: url('img/8.jpg');"></div>
+		<div class="single-card" style="background-image: url('img/9.jpg');"></div>
+	</div>
+
+	<footer>
+		<div class="brand">
+			<h1>Yiğitto<br>E-Commerce</h1>
+			<br>
+			<p>Lorem ipsum is a placeholder text for stuff like this</p>
+		</div>
+		<div class="footer-menu">
+			<div class="menu-card">
+				<h3>Quick Links</h3>
+				<a href="index.html">Home</a>
+				<a href="">Services</a>
+				<a href="">About</a>
+				<a href="">Contact</a>
+			</div>
+			<div class="menu-card">
+				<h3>Quick Links</h3>
+				<a href="index.html">Home</a>
+				<a href="">Services</a>
+				<a href="">About</a>
+				<a href="">Contact</a>
+			</div>
+			<div class="menu-card">
+				<h3>Quick Links</h3>
+				<a href="index.html">Home</a>
+				<a href="">Services</a>
+				<a href="">About</a>
+				<a href="">Contact</a>
+			</div>
+			<div class="menu-card">
+				<h3>Quick Links</h3>
+				<a href="index.html">Home</a>
+				<a href="">Services</a>
+				<a href="">About</a>
+				<a href="">Contact</a>
+			</div>
+		</div>
+		
+	</footer>
+	<h3 align="center"> Created By Yiğit Tosun 2020 </h3>
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<script src="flickity.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/src/easytimer.min.js"></script>
+	<script src="app.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		var timer = new Timer();
+		timer.start({countdown: true, startValues: {seconds: 1000}});
+			document.querySelector('.values').innerHTML = timer.getTimeValues().toString();
+		timer.addEventListener('secondsUpdated', function (e) {
+		    document.querySelector('.values').innerHTML = timer.getTimeValues().toString();
+		});
+	</script>
+</body>
+</html>

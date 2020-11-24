@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Yiğit Tosun">
+	<title>Yigitto E-Commerce</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+	<!--JQuery-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="flickity.css">
+	<link rel="stylesheet" href="style.css">
+	 <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/Ecommerce/css/shop-homepage.css" rel="stylesheet" />
+	<link href="/Ecommerce/node_modules/bootstrap/scss/_reboot.scss" rel="stylesheet" />
+</head>
+<body>
+	
+	<header>
+		<div class="main-menu">
+		<h2><span class="brand-logo"><a href="index.html">Yigitto</a><label for="menu-toggle"><span class="ti-menu"></span></label></h2>
+		<input type="checkbox" id="menu-toggle" />
+		
+			<div class="menu-responsive">
+				<form action="" class="search">
+					<input type="search" placeholder="Search What Do You Want !" />
+					<button><span class="span ti-search"></span></button>
+				</form>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="products.html">Products</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="Basket.html">Basket</a>	
+	
+		</div>
+	</header>
+
+  <!-- Modal -->	
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button
+		type="button"
+		class="btn btn-primary"
+		data-toggle="modal"
+		onclick="openCart()"
+		id="cart"
+		data-target="#exampleModal"
+	  >
+	  See Basket
+	  </button>
+  <div
+	class="modal fade"
+	id="exampleModal"
+	tabindex="-1"
+	role="dialog"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true"
+  >
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">
+			Basket Summary
+		  </h5>
+		  <button
+			type="button"
+			class="close"
+			data-dismiss="modal"
+			aria-label="Close"
+		  >
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <ul id="cartSection">
+
+		  </ul>
+		</div>
+		<div class="modal-footer">
+		  <button
+			type="button"
+			class="btn btn-secondary"
+			data-dismiss="modal"
+		  >
+		  Close
+		  </button>
+		  <button onclick="accessPayment()" type="button" class="btn btn-primary">
+			Go To Payment
+		  </button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <br />
+  <br />
+  <div id="categoryList" class="list-group"></div>
+  <div>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number" id="prixMin" placeholder="Min Price" />
+	<input type="number" id="prixMax" placeholder="Max Price" />
+	<button onclick="filterByPrice()">Filter Price</button> 
+	<button onclick="filterBy('asc')">Sort In Ascending Order</button>
+  <button onclick="filterBy('desc')">Sort In Descending Order  </button>
+  <button onclick="getProducts()">Reset Filters</button>
+  </div>
+  <br /><br />
+</div>
+<!-- /.col-lg-3 -->
+
+<div class="col-lg-9">
+  &nbsp;&nbsp;&nbsp;<div id="cardSection" class="row"></div>
+  <!-- /.row -->
+</div>
+<!-- /.col-lg-9 -->
+</div>
+<!-- /.row -->
+</div>
+<!-- /.container -->
+                
+	<div class="deals">
+		<div class="deals-inner">
+			<div class="timer">
+				<h1>Similar Product</h1>
+				<h3 class="values">0.00</h3>
+			</div>
+			<div class="deals-carousel" data-flickity='{ "autoPlay": true,"wrapAround": true, "pageDots": false }'>
+				<div class="single-item">
+					<div class="img" style="background-image: url('img/prod2.jpg');"></div>
+					<div class="info">
+						<h3>Tablet PC</h3>
+						<p>This is a description for the item</p>
+
+						<div class="item-flex">
+							<div class="rating">
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+							</div>
+
+							<div class="price">
+								<h4>$650.00</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="single-item">
+					<div class="img" style="background-image: url('img/prod2.jpg');"></div>
+					<div class="info">
+						<h3>Tablet PC</h3>
+						<p>This is a description for the item</p>
+
+						<div class="item-flex">
+							<div class="rating">
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+							</div>
+
+							<div class="price">
+								<h4>$650.00</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="single-item">
+					<div class="img" style="background-image: url('img/prod2.jpg');"></div>
+					<div class="info">
+						<h3>Tablet PC</h3>
+						<p>This is a description for the item</p>
+
+						<div class="item-flex">
+							<div class="rating">
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+							</div>
+
+							<div class="price">
+								<h4>$650.00</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="single-item">
+					<div class="img" style="background-image: url('img/prod2.jpg');"></div>
+					<div class="info">
+						<h3>Tablet PC</h3>
+						<p>This is a description for the item</p>
+
+						<div class="item-flex">
+							<div class="rating">
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+								<span class="ti-star"></span>
+							</div>
+
+							<div class="price">
+								<h4>$650.00</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+                <div class="card-brand">
+                    <div class="single-card" style="background-image: url('img/7.jpg');"></div>
+                    <div class="single-card" style="background-image: url('img/banner1.jpg');"></div>
+                    <div class="single-card" style="background-image: url('img/9.jpg');"></div>
+                </div>
+            
+                <footer>
+                    <div class="brand">
+                        <h1>Yiğitto E-Commerce</h1>
+                        <p>Lorem ipsum is a placeholder text for stuff like this</p>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="menu-card">
+                            <h3>Quick Links</h3>
+                            <a href="">Home</a>
+                            <a href="">Services</a>
+                            <a href="">About</a>
+                            <a href="">Contact</a>
+                        </div>
+                        <div class="menu-card">
+                            <h3>Quick Links</h3>
+                            <a href="">Home</a>
+                            <a href="">Services</a>
+                            <a href="">About</a>
+                            <a href="">Contact</a>
+                        </div>
+                        <div class="menu-card">
+                            <h3>Quick Links</h3>
+                            <a href="">Home</a>
+                            <a href="">Services</a>
+                            <a href="">About</a>
+                            <a href="">Contact</a>
+                        </div>
+                        <div class="menu-card">
+                            <h3>Quick Links</h3>
+                            <a href="">Home</a>
+                            <a href="">Services</a>
+                            <a href="">About</a>
+                            <a href="">Contact</a>
+                        </div>
+                    </div>
+				</footer>	
+				<h3 align="center"> Created By Yiğit Tosun 2020 </h3>
+
+	<script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="script.js"></script>
+	<script src="flickity.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/src/easytimer.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	
+	<script>
+		var timer = new Timer();
+		timer.start({countdown: true, startValues: {seconds: 1000}});
+			document.querySelector('.values').innerHTML = timer.getTimeValues().toString();
+		timer.addEventListener('secondsUpdated', function (e) {
+		    document.querySelector('.values').innerHTML = timer.getTimeValues().toString();
+		});
+	</script>
+	
+</body>
+</html>
